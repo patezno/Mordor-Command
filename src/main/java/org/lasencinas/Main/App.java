@@ -1,9 +1,13 @@
 package org.lasencinas.Main;
 
 import org.lasencinas.Interfaces.Pedido;
+import org.lasencinas.Interfaces.PedidoPeligroso;
 import org.lasencinas.Interfaces.TratamientoPedido;
 import org.lasencinas.Pedidos.PedidoInternacional;
+import org.lasencinas.Pedidos.PedidoPeligrosoOrden;
 import org.lasencinas.Pedidos.TratamientoPedidoInternacional;
+import org.lasencinas.Pedidos.TratamientoPedidoPeligroso;
+import org.lasencinas.Procesador.Oficina;
 
 /**
  * Crea una oficina que procesa pedidos.
@@ -42,7 +46,7 @@ import org.lasencinas.Pedidos.TratamientoPedidoInternacional;
  * para completar la evaluacion de la parte practica de ED.
  */
 
-/*public class App {
+public class App {
 
     public static void main(String[] args) {
 
@@ -71,8 +75,8 @@ import org.lasencinas.Pedidos.TratamientoPedidoInternacional;
 
         System.out.println(oficina.printarStatus(oficina.procesa(peligroso), pedido));
 
-        *//**
+        /*
          * Los pedidos multiples se completan en el ultimo de los casos test
-         *//*
+         */
     }
-}*/
+}
