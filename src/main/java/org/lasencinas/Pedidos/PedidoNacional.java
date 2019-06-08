@@ -4,22 +4,22 @@ import org.lasencinas.Interfaces.Pedido;
 
 import java.util.UUID;
 
-public class PedidoInternacional implements Pedido {
+public class PedidoNacional implements Pedido {
 
     // Atributos
+
     private String destino = null;
     private int peso = 0;
-    private String id;
+    private String id = null;
 
     // Constructores
 
-    public PedidoInternacional() {
-    }
+    public PedidoNacional() {}
 
-    public PedidoInternacional(String destino, int peso) {
+    public PedidoNacional(String destino, int peso) {
         this.destino = destino;
         this.peso = peso;
-        this.id  = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString();
     }
 
     // Setters

@@ -8,11 +8,10 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import org.lasencinas.Interfaces.Pedido;
 import org.lasencinas.Interfaces.PedidoPeligroso;
+import org.lasencinas.Interfaces.Procesador;
 import org.lasencinas.Interfaces.TratamientoPedido;
-import org.lasencinas.Pedidos.PedidoInternacional;
-import org.lasencinas.Pedidos.PedidoPeligrosoOrden;
-import org.lasencinas.Pedidos.TratamientoPedidoInternacional;
-import org.lasencinas.Pedidos.TratamientoPedidoPeligroso;
+import org.lasencinas.Pedidos.*;
+import org.lasencinas.Procesador.Oficina;
 
 /**
  * NO PUEDES MODIFICAR EL CODIGO DE LOS CASOS TEST
@@ -77,7 +76,7 @@ public class TestPedidos {
         assertFalse(tratamientoKO.tratar());
     }
 
-    /* @Test
+    @Test
     public void test_pedido_peligroso_OK() {
 
         Pedido pedidoConPeligro = new PedidoPeligrosoOrden("Cima de los vientos",
@@ -89,12 +88,14 @@ public class TestPedidos {
         assertTrue(tratamientoOK.tratar());
     }
 
-    *//**
+
+     /*
      * Añade a las clases PedidoInternacional y PedidoPeligrosoOrden
      * una identificador Id de tipo String
      * autogenerado haciendo uso de la clase UUID de Java
      * https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html
-     *//*
+     */
+
     @Test
     public void test_UUID_generator() {
 
@@ -107,9 +108,9 @@ public class TestPedidos {
         assertTrue(internacional.getId() != peligroso.getId());
     }
 
-    *//**
+    /*
      * Añade una clase para los pedidos nacionales.
-     *//*
+     */
 
     @Test
     public void test_pedido_nacional_UUDI() {
@@ -121,13 +122,13 @@ public class TestPedidos {
         assertTrue(internacional.getId() != nacional.getId());
     }
 
-    *//**
+    /*
      * Construye una oficina que procese todo tipo de pedidos.
      *
      * La oficina procesa los pedidos en funcion de si
      * es posible tratarlos o no segun las reglas de cada
      * tipo de pedido
-     *//*
+     */
 
     @Test
     public void test_interface_procesador() {
@@ -144,13 +145,13 @@ public class TestPedidos {
         assertTrue(correos.procesa(pedidoConPeligro));
     }
 
-    *//**
+    /*
      * La oficina puede enviar un mensaje que informe del
      * status del pedido, en funcion de si ha sido posible procesarlo.
      *
      * Hace uso de un tipo enumerado STATUS con las constantes
      * ACEPTADO y RECHAZADO.
-     *//*
+     */
 
     @Test
     public void test_printar_status() {
@@ -173,7 +174,7 @@ public class TestPedidos {
                 pedidoConPeligro));
 
     }
-
+/*
     *//**
      * Crea una clase TratamientoPedidoMultiple que permita tratar
      * pedidos multiples.

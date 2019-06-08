@@ -2,12 +2,15 @@ package org.lasencinas.Pedidos;
 
 import org.lasencinas.Interfaces.PedidoPeligroso;
 
+import java.util.UUID;
+
 public class PedidoPeligrosoOrden implements PedidoPeligroso {
 
     // Atributos
 
     private String destino = null;
     private String instrucciones = null;
+    private String id = null;
 
     // Constructores
 
@@ -16,6 +19,7 @@ public class PedidoPeligrosoOrden implements PedidoPeligroso {
     public PedidoPeligrosoOrden(String destino, String mensaje) {
         this.destino = destino;
         this.instrucciones = mensaje;
+        this.id = UUID.randomUUID().toString();
     }
 
     // Setters
@@ -37,6 +41,11 @@ public class PedidoPeligrosoOrden implements PedidoPeligroso {
     public String getInstrucciones() {
         return instrucciones;
     }
+
+    public String getId() {
+        return id;
+    }
+    // Métodos
 
     @Override
     public String instrucciones() {
