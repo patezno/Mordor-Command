@@ -1,5 +1,10 @@
 package org.lasencinas.Main;
 
+import org.lasencinas.Interfaces.Pedido;
+import org.lasencinas.Interfaces.TratamientoPedido;
+import org.lasencinas.Pedidos.PedidoInternacional;
+import org.lasencinas.Pedidos.TratamientoPedidoInternacional;
+
 /**
  * Crea una oficina que procesa pedidos.
  *
@@ -37,7 +42,7 @@ package org.lasencinas.Main;
  * para completar la evaluacion de la parte practica de ED.
  */
 
-public class App {
+/*public class App {
 
     public static void main(String[] args) {
 
@@ -66,8 +71,8 @@ public class App {
 
         System.out.println(oficina.printarStatus(oficina.procesa(peligroso), pedido));
 
-        /**
+        *//**
          * Los pedidos multiples se completan en el ultimo de los casos test
-         */
+         *//*
     }
-}
+}*/
