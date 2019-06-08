@@ -33,6 +33,6 @@ public class TratamientoPedidoInternacional implements TratamientoPedido {
 
     @Override
     public boolean tratar() {
-        return false;
+        return pedido.getDestino() != "Mordor";
     }
 }

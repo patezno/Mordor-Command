@@ -38,7 +38,7 @@ public class TestPedidos {
         assertFalse(tratamientoKO.tratar());
     }
 
-   /* @Test
+   @Test
     public void test_Comarca() {
 
         Pedido pedidoInt = new PedidoInternacional("Comarca", 100);
@@ -50,7 +50,7 @@ public class TestPedidos {
         assertTrue(tratamientoOK.tratar());
     }
 
-    *//**
+    /*
      * Crea una clase TratamientoPedidoPeligroso que permita tratar
      * pedidos peligrosos.
      *
@@ -60,8 +60,8 @@ public class TestPedidos {
      *
      * Crea las clases necesarias que se requieren en los casos test
      * respetando los constructores que se exigen.
-     *//*
-    @Test
+     */
+    /* @Test
     public void test_pedido_peligroso_KO() {
 
         Pedido pedidoConPeligro = new PedidoPeligrosoOrden("Monte del destino",
