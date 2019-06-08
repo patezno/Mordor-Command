@@ -7,9 +7,12 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.lasencinas.Interfaces.Pedido;
+import org.lasencinas.Interfaces.PedidoPeligroso;
 import org.lasencinas.Interfaces.TratamientoPedido;
 import org.lasencinas.Pedidos.PedidoInternacional;
+import org.lasencinas.Pedidos.PedidoPeligrosoOrden;
 import org.lasencinas.Pedidos.TratamientoPedidoInternacional;
+import org.lasencinas.Pedidos.TratamientoPedidoPeligroso;
 
 /**
  * NO PUEDES MODIFICAR EL CODIGO DE LOS CASOS TEST
@@ -61,7 +64,7 @@ public class TestPedidos {
      * Crea las clases necesarias que se requieren en los casos test
      * respetando los constructores que se exigen.
      */
-    /* @Test
+    @Test
     public void test_pedido_peligroso_KO() {
 
         Pedido pedidoConPeligro = new PedidoPeligrosoOrden("Monte del destino",
@@ -74,7 +77,7 @@ public class TestPedidos {
         assertFalse(tratamientoKO.tratar());
     }
 
-    @Test
+    /* @Test
     public void test_pedido_peligroso_OK() {
 
         Pedido pedidoConPeligro = new PedidoPeligrosoOrden("Cima de los vientos",
